@@ -47,6 +47,12 @@ public class UpdateTeams {
 	    driver.findElement(By.xpath("(//a[@role='presentation'])[2]")).click();
 	    
 	    Thread.sleep(2000);
+    
+//	    driver.findElement(By.xpath("(//div[@role='button'])[3]")).click();
+//	    
+//        driver.findElement(By.xpath("(//li[@role='option'])[2]")).click();
+	    
+//	    Thread.sleep(2000);
 	    
 	    driver.findElement(By.xpath("//i[@class='pi pi-pencil']")).click();
 	    

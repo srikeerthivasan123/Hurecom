@@ -1,4 +1,4 @@
-package org.createteams;
+package org.createclient;
 
 import java.time.Duration;
 
@@ -6,9 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
-public class TeamMembers {
-	public static void main(String[] args) throws InterruptedException {
+public class UpdatesClients {
+	public static void main(String[] args) {
 		
 System.setProperty("webdriver.chrome.driver","C:\\Users\\srike\\OneDrive\\Pictures\\hurecom bugs\\selenium\\chromedriver-win64\\chromedriver.exe");
 		
@@ -36,16 +37,51 @@ System.setProperty("webdriver.chrome.driver","C:\\Users\\srike\\OneDrive\\Pictur
 		
 		loginbt.click(); 
 		
-		Thread.sleep(3000);
+		driver.findElement(By.xpath("/html/body/app-root/div[1]/app-side-bar/div/div/div/div[2]/ul/li[7]/a")).click();
 		
-	    driver.findElement(By.xpath("(//a[@class='menu-link'])[7]")).click();
-	    
-	    driver.findElement(By.xpath("(//a[@role='presentation'])[3]")).click();
-	    
-	    Thread.sleep(3000);
-	    
-	    driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
-	    
+		driver.findElement(By.xpath("//tbody/tr[1]/td[3]/span[1]/i[1]")).click();
+
+		driver.findElement(By.xpath("//tbody/tr[@class='ng-star-inserted']/td[6]/span[1]/i[1]")).click();
+		
+		Actions a=new Actions(driver);
+		
+		WebElement  branch = driver.findElement(By.xpath("//input[@formcontrolname='branch']"));
+		
+		a.doubleClick(branch).perform();
+		
+		branch.sendKeys("kodambakkam");
+		
+	    driver.findElement(By.xpath("(//span[@class='p-button-label ng-star-inserted'])[5]")).click();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

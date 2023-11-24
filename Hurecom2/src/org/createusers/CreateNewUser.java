@@ -39,7 +39,7 @@ System.setProperty("webdriver.chrome.driver","C:\\Users\\srike\\OneDrive\\Pictur
 	
 	Thread.sleep(3000);
 	
-    driver.findElement(By.xpath("(//li[@class='p-element menu-item'])[8]")).click();
+    driver.findElement(By.xpath("//li[@ptooltip='Teams']//a[@class='menu-link']")).click();
 	
 	driver.findElement(By.xpath(" //span[contains(@class,'p-button')]")).click();
 	

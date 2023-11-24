@@ -1,4 +1,4 @@
-package org.createteams;
+package org.createclient;
 
 import java.time.Duration;
 
@@ -7,9 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TeamMembers {
-	public static void main(String[] args) throws InterruptedException {
-		
+public class ClinetUpdate {
+	
+	public static void main(String[] args) {
 System.setProperty("webdriver.chrome.driver","C:\\Users\\srike\\OneDrive\\Pictures\\hurecom bugs\\selenium\\chromedriver-win64\\chromedriver.exe");
 		
 		WebDriver driver=new ChromeDriver();
@@ -36,16 +36,49 @@ System.setProperty("webdriver.chrome.driver","C:\\Users\\srike\\OneDrive\\Pictur
 		
 		loginbt.click(); 
 		
-		Thread.sleep(3000);
+		driver.findElement(By.xpath("/html/body/app-root/div[1]/app-side-bar/div/div/div/div[2]/ul/li[7]/a")).click();
 		
-	    driver.findElement(By.xpath("(//a[@class='menu-link'])[7]")).click();
-	    
-	    driver.findElement(By.xpath("(//a[@role='presentation'])[3]")).click();
-	    
-	    Thread.sleep(3000);
-	    
-	    driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
-	    
+		driver.findElement(By.xpath("//span[@class='p-button-label ng-star-inserted']")).click();
+		
+		driver.findElement(By.xpath("//input[@class='p-inputtext p-component p-element ng-untouched ng-pristine ng-invalid']")).sendKeys("GEeMSSS");		
+		
+		driver.findElement(By.xpath("//div[@aria-label='dropdown trigger']")).click();
+		
+		driver.findElement(By.xpath("//li[@aria-label='Active']")).click();
+		
+		driver.findElement(By.xpath("//span[normalize-space()='Create']")).click();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
