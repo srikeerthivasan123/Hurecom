@@ -62,4 +62,5 @@ public class StatusGroup extends Baseclass {
         Thread.sleep(3000);
         
         c.getClients().click();
+	}
 }
