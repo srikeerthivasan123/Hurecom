@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.jobopenings.ExportTemplates">
+      <class name="org.jobopenings.Stausgroup">
         <methods>
-          <include name="beforemethod"/>
           <include name="beforeclass"/>
+          <include name="updategroupname"/>
+          <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- org.jobopenings.ExportTemplates -->
+      </class> <!-- org.jobopenings.Stausgroup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

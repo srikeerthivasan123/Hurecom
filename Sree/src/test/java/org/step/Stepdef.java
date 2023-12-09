@@ -12,28 +12,28 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Stepdef {
 	
-//static WebDriver driver;
+static WebDriver driver;
 
 
 //
-//@Given("User should navigate to app")
-//public void user_should_navigate_to_app() {
-//   WebDriverManager.chromedriver().setup();
-//   
-//   driver= new ChromeDriver();
-//   
-//   driver.get("https://www.facebook.com/");
-//   
-//   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-//    
-//   
-//}
-//
-//@Given("User enter the username as keerthis")
-//public void user_enter_the_username_as_keerthis() {
-//    
-//	driver.findElement(By.id("email")).sendKeys("keerthi");
-//	
+@Given("User should navigate to app")
+public void user_should_navigate_to_app() {
+   WebDriverManager.chromedriver().setup();
+   
+   driver= new ChromeDriver();
+   
+   driver.get("https://www.facebook.com/");
+   
+   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+    
+   
+}
+
+@Given("User enter the username as keerthis")
+public void user_enter_the_username_as_keerthis() {
+    
+	driver.findElement(By.id("email")).sendKeys("keerthi");
+	
 //   
 //}
 //

@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import dev.failsafe.internal.util.Assert;
+
 public class UpdateTeams {
 	
 	public static void main(String[] args) throws InterruptedException, AWTException {
@@ -82,7 +84,6 @@ public class UpdateTeams {
 		 driver.findElement(By.xpath("(//i[@class='pi pi-trash'])[4]")).click();
 		 
 		 driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
-		 
 		 
 		 
 		 

@@ -13,8 +13,6 @@ public class Loginpage extends Baseclass {
 	 
 	}
 	
-	
-	
 	@FindBy(xpath="//input[@type='text']")
 	public WebElement txtuser;
 	
